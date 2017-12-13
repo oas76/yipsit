@@ -13,6 +13,9 @@
 # library
 /functions
 
+# credentials
+/src/fire.js
+
 # misc
 .DS_Store
 .env.local
