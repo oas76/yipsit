@@ -6,9 +6,8 @@
 # testing
 /coverage
 
-# production
+# generated
 /build
-/public
 
 # library
 /functions
