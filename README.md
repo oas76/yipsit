@@ -23,11 +23,11 @@ var config = {
 };
 var fire = firebase.initializeApp(config);
 export default fire;
----
+´´´
 
 
 
-=========================== General React Documentation ==========================================================
+======= General React Documentation :
 
 
 
