@@ -1,13 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 Also highly influenced by this article https://www.codementor.io/yurio/all-you-need-is-react-firebase-4v7g9p4kf
 
+```
 Prereqesites:
+  Install:
   Node.js  ( https://nodejs.org/en/ )
   npm      ( Should be part of Node install, Node Packet Manager )
-  create-react-app ( npm install -g)
-  firebase-tools (npm install -g )
-  firebase (npm install -S )
   
+  From the project directory, install these packages:
+  
+  firebase-tools (npm install -g firebase-tools)
+  firebase (npm install -S firebase)
+  firebaseui (npm install --save firebaseui)
+```
+
 Then create a javascriptfile, called 'fire.js' in the src directory, holding your firebase credentials, with this format
 
 ```
