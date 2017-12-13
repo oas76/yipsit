@@ -1,6 +1,37 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 Also highly influenced by this article https://www.codementor.io/yurio/all-you-need-is-react-firebase-4v7g9p4kf
 
+Prereqesites:
+  Node.js  ( https://nodejs.org/en/ )
+  npm      ( Should be part of Node install, Node Packet Manager )
+  create-react-app ( npm install -g)
+  firebase-tools (npm install -g )
+  firebase (npm install -S )
+  
+Then create a javascriptfile, called 'fire.js' in the src directory, holding your firebase credentials, with this format
+
+---
+import firebase from 'firebase'
+var config = {
+  apiKey: "your-key",
+  authDomain: "your-domain",
+  databaseURL: "your-db-url",
+  projectId: "your-project-id",
+  storageBucket: "your-storage-bucket",
+  messagingSenderId: "your-id"
+  // And other specific firebase keys
+};
+var fire = firebase.initializeApp(config);
+export default fire;
+---
+
+
+
+=========================== General React Documentation ==========================================================
+
+
+
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
