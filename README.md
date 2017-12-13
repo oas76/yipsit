@@ -10,7 +10,7 @@ Prereqesites:
   
 Then create a javascriptfile, called 'fire.js' in the src directory, holding your firebase credentials, with this format
 
----
+´´´
 import firebase from 'firebase'
 var config = {
   apiKey: "your-key",
