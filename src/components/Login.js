@@ -1,22 +1,16 @@
 import React, { Component } from 'react';
-import './App.css';
-import fire from './fire.js';
+import '../res/App.css';
+import fire from '../fire'
 
 
 class Login extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      authOk: false
-    }; // <- set up react state
-  }
 
   doLogin() {
-    var fireui = require('firebaseui')
-    var firebase = require('firebase')
-    var ui = new fireui.auth.AuthUI(firebase.auth());
-    var uiConfig = {
-        signInSuccessUrl: 'https://yipsit-80c51.firebaseapp.com',
+    let fireui = require('firebaseui')
+    let firebase = require('firebase')
+    let ui = new fireui.auth.AuthUI(fire.auth());
+    let uiConfig = {
+        signInSuccessUrl: 'https://yipsit-80c51.firebaseapp.com/user',
         signInOptions: [
           firebase.auth.FacebookAuthProvider.PROVIDER_ID,
           firebase.auth.GithubAuthProvider.PROVIDER_ID
@@ -29,8 +23,8 @@ class Login extends Component {
   }
 
   render() {
-    this.doLogin()
-    return (
+      this.doLogin();
+      return (
       <div id='login'>
         <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
       </div>
